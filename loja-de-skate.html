@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate de Ladeira</title>
+
+    <link rel='stylesheet' href="loja-de-skate.css">
+
+    <script src="loja-de-skate.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Skate de Ladeira</h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Adicione o skate ao estoque.</span>
+
+        </div>
+        <div class="card">
+            <div class="lineInput">
+                <label>Marca</label>
+                <input type="text" id="brand" placeholder="Clique para add a marca!">
+            </div>
+            <div class="lineInput">
+                <label>Tamanho</label>
+                <input type="text" id="size" placeholder="Clique para add o tamanho!">
+            </div>
+            <div class="lineInput">
+                <label>Valor</label>
+                <input type="text" id="value" placeholder="Clique para add o valor!">
+            </div>
+
+            <button onClick="product.save()">Salvar</button>
+            <button onClick="product.cancel()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Marca</th>
+                    <th>Tamanho</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
